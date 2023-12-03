@@ -1,0 +1,25 @@
+{
+  "name": "sit725-2023-t1-prac3",
+  "version": "1.0.0",
+  "description": "SIT725-T1-PRAC3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s224021028/sit725-2023-t1-prac3.git"
+  },
+  "author": "Pavan Roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s224021028/sit725-2023-t1-prac3/issues"
+  },
+  "homepage": "https://github.com/s224021028/sit725-2023-t1-prac3#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jquery": "^3.7.1",
+    "mongodb": "^6.3.0"
+  }
+}
