@@ -17,10 +17,13 @@ let data
 
 async function connectDatabse()
 {
-    try {
+    try 
+    {
         await client.connect();
         data = client.db().collection("Expressions");
-    } catch (exception) {
+    }
+    catch (exception) 
+    {
         console.error(exception);
     }
 }
@@ -32,7 +35,6 @@ app.get("/history", async (req, res) => {
 })
 
 app.post("/result", (req, res) => {
-    console.log(req.body)
     var operation = req.body.operation
     var numA = parseFloat(req.body.numA)
     var numB = parseFloat(req.body.numB)
@@ -81,10 +83,12 @@ function calculate(operation, numA, numB, showDecimal)
 
 async function getData()
 {
-    try {
+    try 
+    {
         return await data.find({}).toArray()
     }
-    catch (error) {
+    catch (error) 
+    {
         console.error(error);
     }
 }
